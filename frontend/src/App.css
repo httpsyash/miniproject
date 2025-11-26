@@ -1,42 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Additional custom styles if needed */
+/* Most styles are handled by Tailwind, but we can add specific overrides here */
+
+.message {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Ensure smooth animations */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #B794F6;
+  outline-offset: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Typing indicator animation delays */
+.typing-dot-1 {
+  animation-delay: 0s;
 }
 
-.card {
-  padding: 2em;
+.typing-dot-2 {
+  animation-delay: 0.2s;
 }
 
-.read-the-docs {
-  color: #888;
+.typing-dot-3 {
+  animation-delay: 0.4s;
 }
